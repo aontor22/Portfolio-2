@@ -163,7 +163,7 @@ const App: React.FC = () => {
                 <a href="https://github.com/aontor22" target="_blank" rel="noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white">
                     <Github size={20} />
                 </a>
-                <a href="https://www.linkedin.com/in/udoy-chowdhury-a5434a37a" target="_blank" rel="noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-white">
+                <a href="https://www.linkedin.com/in/udoy-chowdhury-22-gub" target="_blank" rel="noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-white">
                     <Linkedin size={20} />
                 </a>
             </div>
