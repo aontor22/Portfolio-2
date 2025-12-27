@@ -216,9 +216,9 @@ const App: React.FC = () => {
                     <a href="#projects" className="px-8 py-3 bg-cyan-600 hover:bg-cyan-500 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-cyan-500/30">
                         View Projects
                     </a>
-                    <a href="mailto:udoychowdhury90413@gmail.com" className="px-8 py-3 border border-gray-300 dark:border-white/20 hover:bg-gray-100 dark:hover:bg-white/5 text-gray-700 dark:text-white rounded-full font-semibold transition-all flex items-center gap-2">
+                    {/* <a href="mailto:udoychowdhury90413@gmail.com" className="px-8 py-3 border border-gray-300 dark:border-white/20 hover:bg-gray-100 dark:hover:bg-white/5 text-gray-700 dark:text-white rounded-full font-semibold transition-all flex items-center gap-2">
                         <Mail size={18} /> Contact Me
-                    </a>
+                    </a> */}
                 </div>
             </motion.div>
 
