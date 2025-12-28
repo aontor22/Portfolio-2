@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FileText, Mail, Calendar, X, Check, Copy, Briefcase, Download, ChevronRight } from 'lucide-react';
+import resumePdf from "../assets/Resume.pdf";
 
 const HireMeModal: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -95,7 +96,7 @@ const HireMeModal: React.FC = () => {
                 
                 {/* Resume Action */}
                 <a 
-                   href="/resume.pdf" 
+                   href={resumePdf}
                    download="Udoy_Chowdhury_Resume.pdf"
                    className="flex items-center justify-between p-4 bg-white dark:bg-white/5 rounded-2xl border border-gray-200 dark:border-white/5 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/5 transition-all group cursor-pointer"
                 >
