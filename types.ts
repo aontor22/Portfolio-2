@@ -7,6 +7,7 @@ export interface Project {
   imageUrl: string;
   bgGradient: string;
   repoUrl?: string;
+  liveUrl?: string;
 }
 
 export interface ChatMessage {
