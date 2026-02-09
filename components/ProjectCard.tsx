@@ -92,7 +92,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                     </a>
                 )}
                 <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/20 border border-white/10 backdrop-blur-md hover:bg-white/10 transition-colors group/btn">
-                    <a href="https://food-ordering-system-ten-sable.vercel.app/"></a>
+                    {/* <a href="https://food-ordering-system-ten-sable.vercel.app/"></a> */}
                     <span className="text-xs font-semibold text-white/90">View</span>
                     <ArrowRight size={14} className="text-white group-hover/btn:translate-x-1 transition-transform" />
                 </div>
