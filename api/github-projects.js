@@ -95,13 +95,6 @@ function titleCaseRepo(name) {
     .trim();
 }
 
-function coverSlug(name) {
-  return String(name || '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '') || 'project';
-}
-
 function normalizeLiveUrl(value) {
   if (!value) return null;
 
@@ -163,15 +156,6 @@ function repoToProject(repo) {
   const featuredIndex = FEATURED.findIndex(
     (name) => name.toLowerCase() === nameKey,
   );
-  const liveUrl = normalizeLiveUrl(repo.homepage);
-
-  // Every repository with a real live URL uses a REAL screenshot captured by
-  // scripts/capture-live-project-covers.mjs and committed under public/.
-  // If a capture is missing, the React card automatically falls back to its
-  // generated category-aware visual instead of showing a broken image.
-  const imageUrl = liveUrl
-    ? `/project-covers/live/${coverSlug(repo.name)}.png`
-    : curated.imageUrl || null;
 
   return {
     id: String(repo.id),
@@ -181,8 +165,12 @@ function repoToProject(repo) {
       repo.description ||
       'A software project by Udoy Chowdhury. Open the repository to explore implementation details and source code.',
     repoUrl: repo.html_url,
-    liveUrl,
-    imageUrl,
+    liveUrl: normalizeLiveUrl(repo.homepage),
+
+    // Do not manufacture an external GitHub OpenGraph URL.
+    // External preview hosts can fail, be blocked, or change behavior.
+    // A real local screenshot can be configured per project in CURATED.
+    imageUrl: curated.imageUrl || null,
 
     category: inferCategory(repo),
     featured: featuredIndex >= 0,
