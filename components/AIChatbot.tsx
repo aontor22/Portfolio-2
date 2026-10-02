@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageSquare, X, Mic, Send, Minimize2, Maximize2, Loader2 } from 'lucide-react';
-import { getChatResponse } from '../services/geminiService';
+import { getChatResponse } from '../services/secureGeminiService';
 import { ChatMessage } from '../types';
 import { motion, AnimatePresence } from 'framer-motion';
 

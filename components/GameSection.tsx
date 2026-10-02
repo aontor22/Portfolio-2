@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { generateTriviaQuestion, checkTriviaAnswer } from '../services/geminiService';
+import { generateTriviaQuestion, checkTriviaAnswer } from '../services/secureGeminiService';
 import { Brain, Sparkles, Send, RefreshCw, Loader2, Gamepad2, Grid3X3, Bug } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import SnakeGame from './SnakeGame';

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { generateFuturisticImage } from '../services/geminiService';
+import { generateFuturisticImage } from '../services/secureGeminiService';
 import { Sparkles, Image as ImageIcon, RefreshCw, Download, Palette, Zap } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 

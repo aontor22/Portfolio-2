@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Scene3D from './components/Scene3D';
-import ProjectCard from './components/ProjectCard';
+import SecureProjectsSection from './components/SecureProjectsSection';
 import GameSection from './components/GameSection';
 import AIChatbot from './components/AIChatbot';
 import SkillsSection from './components/SkillsSection';
@@ -10,52 +10,8 @@ import MatrixRain from './components/MatrixRain';
 import Typewriter from './components/Typewriter';
 import HireMeModal from './components/HireMeModal';
 import TerminalMode from './components/TerminalMode';
-import { Project } from './types';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import { ChevronDown, Code, Palette, Cpu, Terminal, Mail, Linkedin, Github, Moon, Sun, Binary } from 'lucide-react';
-
-const projects: Project[] = [
-  {
-    id: 1,
-    title: "MediCraft",
-    subtitle: "Full-Stack Medical Store & Prescription System",
-    metric: "40% Faster Search",
-    tags: ["React.js", "MongoDB", "Firebase"],
-    imageUrl: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&q=80&w=1979", 
-    bgGradient: "bg-gradient-to-br from-[#021B79] via-[#0575E6] to-[#021B79]",
-    repoUrl: "https://github.com/aontor22"
-  },
-  {
-    id: 2,
-    title: "CRM System",
-    subtitle: "Java Swing Desktop Application",
-    metric: "10k+ Records",
-    tags: ["Java", "SQL", "MVC"],
-    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2070",
-    bgGradient: "bg-gradient-to-br from-[#1A2980] via-[#26D0CE] to-[#1A2980]",
-    repoUrl: "https://github.com/aontor22"
-  },
-  {
-    id: 3,
-    title: "Food Ordering",
-    subtitle: "Full-Stack Restaurant Platform",
-    metric: "50% Less Time",
-    tags: ["Node.js", "React.js", "DaisyUI"],
-    imageUrl: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=1000",
-    bgGradient: "bg-gradient-to-br from-[#DD2476] via-[#FF512F] to-[#DD2476]",
-    repoUrl: "https://github.com/aontor22"
-  },
-  {
-    id: 4,
-    title: "POS System",
-    subtitle: "Retail Point of Sale Interface",
-    metric: "Real-time Sync",
-    tags: ["React.js", "Tailwind", "Redux"],
-    imageUrl: "https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&q=80&w=2000",
-    bgGradient: "bg-gradient-to-br from-[#11998e] via-[#38ef7d] to-[#11998e]",
-    repoUrl: "https://github.com/aontor22"
-  }
-];
 
 const SectionTitle = ({ children, icon: Icon }: { children?: React.ReactNode, icon: any }) => (
     <div className="flex items-center gap-3 mb-12">
@@ -243,27 +199,7 @@ const App: React.FC = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-24 relative transition-colors duration-300">
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-            <SectionTitle icon={Code}>Featured Projects</SectionTitle>
-            <p className="text-gray-600 dark:text-gray-400 mb-8 max-w-2xl">
-                A selection of my professional work, ranging from healthcare platforms to high-performance desktop applications.
-            </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-                {projects.map((project, index) => (
-                   <motion.div
-                      key={project.id}
-                      initial={{ opacity: 0, y: 50 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.5, delay: index * 0.1 }}
-                   >
-                        <ProjectCard project={project} />
-                   </motion.div>
-                ))}
-            </div>
-        </div>
-      </section>
+      <SecureProjectsSection />
 
       {/* Skills Section */}
       <section id="skills" className="py-24 bg-gray-50 dark:bg-transparent transition-colors duration-300 relative">

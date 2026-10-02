@@ -1,0 +1,210 @@
+[
+  {
+    "repo": "Portfolio-2",
+    "liveUrl": "https://portfolio-udoy.vercel.app/",
+    "image": "/project-covers/live/portfolio-2.png",
+    "bytes": 107981,
+    "capturedAt": "2026-10-02T06:39:07.163Z",
+    "status": "ok"
+  },
+  {
+    "repo": "Food-Ordering-system",
+    "liveUrl": "https://food-ordering-system-ten-sable.vercel.app/",
+    "image": "/project-covers/live/food-ordering-system.png",
+    "bytes": 1454777,
+    "capturedAt": "2026-10-02T06:39:12.220Z",
+    "status": "ok"
+  },
+  {
+    "repo": "solarhub-bd",
+    "liveUrl": "https://solarhub-bd.vercel.app/",
+    "image": "/project-covers/live/solarhub-bd.png",
+    "bytes": 236314,
+    "capturedAt": "2026-10-02T06:39:16.242Z",
+    "status": "ok"
+  },
+  {
+    "repo": "ERP",
+    "liveUrl": "https://erp-orpin-alpha.vercel.app/",
+    "image": "/project-covers/live/erp.png",
+    "bytes": 20004,
+    "capturedAt": "2026-10-02T06:39:18.693Z",
+    "status": "ok"
+  },
+  {
+    "repo": "Point-of-Sale-System",
+    "liveUrl": "https://point-of-sale-system-hazel.vercel.app/",
+    "image": "/project-covers/live/point-of-sale-system.png",
+    "bytes": 9604,
+    "capturedAt": "2026-10-02T06:39:21.568Z",
+    "status": "ok"
+  },
+  {
+    "repo": "personal-expense-manager",
+    "liveUrl": "https://personal-expense-manager-six.vercel.app/",
+    "image": "/project-covers/live/personal-expense-manager.png",
+    "bytes": 413397,
+    "capturedAt": "2026-10-02T06:39:24.158Z",
+    "status": "ok"
+  },
+  {
+    "repo": "Morse-Universal",
+    "liveUrl": "https://morse-universal.vercel.app/",
+    "image": "/project-covers/live/morse-universal.png",
+    "bytes": 257500,
+    "capturedAt": "2026-10-02T06:39:26.726Z",
+    "status": "ok"
+  },
+  {
+    "repo": "lan-arena-fps",
+    "liveUrl": "https://lan-arena-fps.vercel.app/",
+    "image": "/project-covers/live/lan-arena-fps.png",
+    "bytes": 485727,
+    "capturedAt": "2026-10-02T06:39:30.671Z",
+    "status": "ok"
+  },
+  {
+    "repo": "smart-mess-manager",
+    "liveUrl": "https://smart-mess-manager-nu.vercel.app/",
+    "image": "/project-covers/live/smart-mess-manager.png",
+    "bytes": 122347,
+    "capturedAt": "2026-10-02T06:39:33.157Z",
+    "status": "ok"
+  },
+  {
+    "repo": "speed_limit_sign_detection",
+    "liveUrl": "https://speed-limit-sign-detection-nine.vercel.app/",
+    "image": "/project-covers/live/speed-limit-sign-detection.png",
+    "bytes": 120166,
+    "capturedAt": "2026-10-02T06:39:35.755Z",
+    "status": "ok"
+  },
+  {
+    "repo": "DokanPilot-POS",
+    "liveUrl": "https://dokan-pilot-pos-api.vercel.app/",
+    "image": "/project-covers/live/dokanpilot-pos.png",
+    "bytes": 11149,
+    "capturedAt": "2026-10-02T06:39:39.559Z",
+    "status": "ok"
+  },
+  {
+    "repo": "mojar-game-ghor",
+    "liveUrl": "https://mojar-game-ghor.vercel.app/",
+    "image": "/project-covers/live/mojar-game-ghor.png",
+    "bytes": 6393,
+    "capturedAt": "2026-10-02T06:39:43.884Z",
+    "status": "ok"
+  },
+  {
+    "repo": "FIFA",
+    "liveUrl": "https://fifa-ecru-iota.vercel.app/",
+    "image": "/project-covers/live/fifa.png",
+    "bytes": 6393,
+    "capturedAt": "2026-10-02T06:39:48.095Z",
+    "status": "ok"
+  },
+  {
+    "repo": "MAP3D",
+    "liveUrl": "https://map-3-d.vercel.app/",
+    "image": "/project-covers/live/map3d.png",
+    "bytes": 6393,
+    "capturedAt": "2026-10-02T06:39:56.662Z",
+    "status": "ok"
+  },
+  {
+    "repo": "gub-student-portal-Demo",
+    "liveUrl": "https://gub-student-portal-demo-client.vercel.app/",
+    "image": "/project-covers/live/gub-student-portal-demo.png",
+    "bytes": 20936,
+    "capturedAt": "2026-10-02T06:39:58.968Z",
+    "status": "ok"
+  },
+  {
+    "repo": "IronCore-AI-Command-Hub",
+    "liveUrl": "https://iron-core-ai-command-hub.vercel.app/",
+    "image": "/project-covers/live/ironcore-ai-command-hub.png",
+    "bytes": 6393,
+    "capturedAt": "2026-10-02T06:40:01.662Z",
+    "status": "ok"
+  },
+  {
+    "repo": "IndustryOps-ERP",
+    "liveUrl": "https://industry-ops-erp.vercel.app/",
+    "image": "/project-covers/live/industryops-erp.png",
+    "bytes": 225392,
+    "capturedAt": "2026-10-02T06:40:05.709Z",
+    "status": "ok"
+  },
+  {
+    "repo": "medimate",
+    "liveUrl": "https://medimate-one-iota.vercel.app/",
+    "image": "/project-covers/live/medimate.png",
+    "bytes": 164271,
+    "capturedAt": "2026-10-02T06:40:08.540Z",
+    "status": "ok"
+  },
+  {
+    "repo": "daily-utility-tools",
+    "liveUrl": "https://daily-utility-tools.vercel.app/",
+    "image": "/project-covers/live/daily-utility-tools.png",
+    "bytes": 156435,
+    "capturedAt": "2026-10-02T06:40:11.124Z",
+    "status": "ok"
+  },
+  {
+    "repo": "MealFlow",
+    "liveUrl": "https://meal-flow-cyan.vercel.app/",
+    "image": "/project-covers/live/mealflow.png",
+    "bytes": 58060,
+    "capturedAt": "2026-10-02T06:40:13.958Z",
+    "status": "ok"
+  },
+  {
+    "repo": "Mockup-Magic",
+    "liveUrl": "https://mockup-magic-two.vercel.app/",
+    "image": "/project-covers/live/mockup-magic.png",
+    "bytes": 30491,
+    "capturedAt": "2026-10-02T06:40:16.428Z",
+    "status": "ok"
+  },
+  {
+    "repo": "image-converter",
+    "liveUrl": "https://image-converter-nine-gold.vercel.app/",
+    "image": "/project-covers/live/image-converter.png",
+    "bytes": 20801,
+    "capturedAt": "2026-10-02T06:40:18.877Z",
+    "status": "ok"
+  },
+  {
+    "repo": "speed_limit_system",
+    "liveUrl": "https://speed-limit-system.vercel.app/",
+    "image": "/project-covers/live/speed-limit-system.png",
+    "bytes": 74338,
+    "capturedAt": "2026-10-02T06:40:25.368Z",
+    "status": "ok"
+  },
+  {
+    "repo": "Weather-App",
+    "liveUrl": "https://weather-app-weld-six-20.vercel.app/",
+    "image": "/project-covers/live/weather-app.png",
+    "bytes": 20187,
+    "capturedAt": "2026-10-02T06:40:27.613Z",
+    "status": "ok"
+  },
+  {
+    "repo": "Night-Sky",
+    "liveUrl": "https://night-sky-blush.vercel.app/",
+    "image": "/project-covers/live/night-sky.png",
+    "bytes": 6393,
+    "capturedAt": "2026-10-02T06:40:29.982Z",
+    "status": "ok"
+  },
+  {
+    "repo": "3d",
+    "liveUrl": "https://3d-sand-theta.vercel.app/",
+    "image": "/project-covers/live/3d.png",
+    "bytes": 80087,
+    "capturedAt": "2026-10-02T06:40:37.068Z",
+    "status": "ok"
+  }
+]

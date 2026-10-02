@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#531517"/><stop offset="1" stop-color="#180607"/></linearGradient>
+  <radialGradient id="glow" cx="80%" cy="10%" r="75%"><stop stop-color="#fb7185" stop-opacity=".35"/><stop offset="1" stop-color="#fb7185" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="70" height="70" patternUnits="userSpaceOnUse"><path d="M70 0H0V70" fill="none" stroke="#fff" stroke-opacity=".05" stroke-width="1"/></pattern>
+  <filter id="shadow"><feDropShadow dx="0" dy="20" stdDeviation="30" flood-color="#000" flood-opacity=".35"/></filter>
+</defs>
+<rect width="1200" height="1500" fill="url(#bg)"/>
+<rect width="1200" height="1500" fill="url(#glow)"/>
+<rect width="1200" height="1500" fill="url(#grid)"/>
+
+<g filter="url(#shadow)">
+  <circle cx="625" cy="535" r="330" fill="#fff" fill-opacity=".09" stroke="#fecaca" stroke-opacity=".16" stroke-width="5"/>
+  <circle cx="625" cy="535" r="265" fill="#fb923c" fill-opacity=".22" stroke="#fed7aa" stroke-opacity=".20" stroke-width="6"/>
+  <path d="M625 270L865 650H385Z" fill="#fb7185" fill-opacity=".34" stroke="#fecdd3" stroke-opacity=".18" stroke-width="5"/>
+  <g fill="#fca5a5" fill-opacity=".55"><circle cx="590" cy="420" r="28"/><circle cx="700" cy="505" r="34"/><circle cx="540" cy="575" r="30"/><circle cx="730" cy="610" r="26"/></g>
+  <g fill="#86efac" fill-opacity=".42"><path d="M470 455c50-70 110-28 100 24-44 14-75 4-100-24Z"/><path d="M660 380c46-62 100-22 88 24-39 10-66 2-88-24Z"/><path d="M650 560c55-66 112-18 94 30-44 8-73-3-94-30Z"/></g>
+  <rect x="185" y="900" width="830" height="210" rx="52" fill="#fff" fill-opacity=".07" stroke="#fecaca" stroke-opacity=".13" stroke-width="3"/>
+  <circle cx="285" cy="1005" r="64" fill="#fb923c" fill-opacity=".22"/><rect x="390" y="958" width="360" height="22" rx="11" fill="#fff" fill-opacity=".12"/><rect x="390" y="1000" width="250" height="18" rx="9" fill="#fff" fill-opacity=".08"/>
+</g>
+
+<path d="M0 1100C260 1010 420 1210 670 1120S1030 970 1200 1070V1500H0Z" fill="#020617" fill-opacity=".42"/>
+</svg>

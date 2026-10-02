@@ -1,0 +1,11 @@
+api/_shared.js
+api/gemini.js
+api/github-projects.js
+components/SecureProjectsSection.tsx
+services/githubProjectsService.ts
+services/secureGeminiService.ts
+scripts/verify-security.mjs
+.env.example
+.gitignore.security-snippet
+INTEGRATION.md
+SECURITY-CHANGELOG.md
