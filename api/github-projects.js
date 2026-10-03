@@ -18,59 +18,121 @@ const FEATURED = [
   'BrewHouse',
 ];
 
-/*
- * IMPORTANT:
- * Use LOCAL images for projects when you have a real screenshot.
- * Example:
- *
- * 'industryops-erp': {
- *   title: 'IndustryOps ERP',
- *   category: 'ERP / Full Stack',
- *   imageUrl: '/project-covers/industryops-erp.webp',
- * },
- *
- * Put the file under public/project-covers/.
- *
- * If imageUrl is omitted, the UI renders a polished generated cover instead
- * of relying on GitHub's external OpenGraph image host.
- */
+// Curated titles, categories, and Unsplash images for key projects.
+// These are direct Unsplash CDN image URLs (not copied local assets).
 const CURATED = {
   'industryops-erp': {
     title: 'IndustryOps ERP',
     category: 'ERP / Full Stack',
-    imageUrl: '/project-covers/industryops-erp.svg',
+    imageUrl:
+      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80',
   },
   'point-of-sale-system': {
     title: 'Point of Sale System',
     category: 'POS / Business App',
-    imageUrl: '/project-covers/pos-system.svg',
+    imageUrl:
+      'https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80',
   },
   customerrelationshipsystem: {
     title: 'Customer Relationship System',
     category: 'CRM / Desktop App',
-    imageUrl: '/project-covers/crm-system.svg',
+    imageUrl:
+      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
   },
   'food-ordering-system': {
     title: 'Food Ordering System',
     category: 'Food Ordering / Full Stack',
-    imageUrl: '/project-covers/food-ordering.svg',
+    imageUrl:
+      'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=80',
+  },
+  foodos: {
+    title: 'FoodOS',
+    category: 'Food Ordering / Full Stack',
+    imageUrl:
+      'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=80',
   },
   'personal-expense-manager': {
     title: 'Personal Expense Manager',
     category: 'Finance / Web App',
-    imageUrl: '/project-covers/personal-expense-manager.svg',
+    imageUrl:
+      'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80',
   },
   brewhouse: {
     title: 'BrewHouse',
     category: 'Web Application',
-    imageUrl: '/project-covers/brewhouse.svg',
+    imageUrl:
+      'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=80',
   },
   medicraft: {
     title: 'MediCraft',
     category: 'Healthcare / Full Stack',
-    imageUrl: '/project-covers/medicraft.svg',
+    imageUrl:
+      'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1200&q=80',
   },
 };
+
+const CATEGORY_IMAGE_RULES = [
+  {
+    test: /health|medic|pharma|hospital|doctor|prescription/i,
+    imageUrl:
+      'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    test: /crm|dashboard|analytics|desktop|java swing/i,
+    imageUrl:
+      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    test: /food|restaurant|ordering|delivery|kitchen/i,
+    imageUrl:
+      'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    test: /pos|retail|store|shop|cashier/i,
+    imageUrl:
+      'https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    test: /erp|business|inventory|operations|management/i,
+    imageUrl:
+      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    test: /finance|expense|budget|accounting|money/i,
+    imageUrl:
+      'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    test: /coffee|cafe|brew/i,
+    imageUrl:
+      'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    test: /ai|machine learning|deep learning|computer vision|nlp/i,
+    imageUrl:
+      'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    test: /automation|testing|qa|selenium|playwright|scraper/i,
+    imageUrl:
+      'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    test: /backend|api|server|database/i,
+    imageUrl:
+      'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    test: /mobile|android|ios|flutter|react native/i,
+    imageUrl:
+      'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
+    test: /frontend|website|web app|landing page|portfolio|react|next/i,
+    imageUrl:
+      'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80',
+  },
+];
 
 function csvSet(value) {
   return new Set(
@@ -112,12 +174,7 @@ function inferCategory(repo) {
   if (curated?.category) return curated.category;
 
   const topics = Array.isArray(repo.topics) ? repo.topics : [];
-  const haystack = [
-    repo.name,
-    repo.description,
-    repo.language,
-    ...topics,
-  ]
+  const haystack = [repo.name, repo.description, repo.language, ...topics]
     .filter(Boolean)
     .join(' ')
     .toLowerCase();
@@ -150,12 +207,25 @@ function inferCategory(repo) {
   return 'Software Project';
 }
 
+function getUnsplashImage(repo, category) {
+  const curated = CURATED[String(repo.name || '').toLowerCase()];
+  if (curated?.imageUrl) return curated.imageUrl;
+
+  const haystack = [repo.name, repo.description, repo.language, ...(Array.isArray(repo.topics) ? repo.topics : []), category]
+    .filter(Boolean)
+    .join(' ');
+
+  const match = CATEGORY_IMAGE_RULES.find((rule) => rule.test.test(haystack));
+  return match?.imageUrl || 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80';
+}
+
 function repoToProject(repo) {
   const nameKey = String(repo.name || '').toLowerCase();
   const curated = CURATED[nameKey] || {};
   const featuredIndex = FEATURED.findIndex(
     (name) => name.toLowerCase() === nameKey,
   );
+  const category = inferCategory(repo);
 
   return {
     id: String(repo.id),
@@ -166,13 +236,8 @@ function repoToProject(repo) {
       'A software project by Udoy Chowdhury. Open the repository to explore implementation details and source code.',
     repoUrl: repo.html_url,
     liveUrl: normalizeLiveUrl(repo.homepage),
-
-    // Do not manufacture an external GitHub OpenGraph URL.
-    // External preview hosts can fail, be blocked, or change behavior.
-    // A real local screenshot can be configured per project in CURATED.
-    imageUrl: curated.imageUrl || null,
-
-    category: inferCategory(repo),
+    imageUrl: getUnsplashImage(repo, category),
+    category,
     featured: featuredIndex >= 0,
     language: repo.language || 'Other',
     topics: Array.isArray(repo.topics) ? repo.topics.slice(0, 8) : [],
@@ -224,6 +289,7 @@ export async function GET() {
 
     const repos = await response.json();
     const extraExcluded = csvSet(process.env.PORTFOLIO_EXCLUDE_REPOS);
+    const includeRepos = csvSet(process.env.PORTFOLIO_INCLUDE_REPOS);
     const includeMediCraft =
       String(process.env.PORTFOLIO_INCLUDE_MEDICRAFT || '').toLowerCase() === 'true';
     const hideLearning =
@@ -243,9 +309,8 @@ export async function GET() {
         (repo) => includeMediCraft || String(repo.name).toLowerCase() !== 'medicraft',
       )
       .filter((repo) => !extraExcluded.has(String(repo.name).toLowerCase()))
-      .filter(
-        (repo) => !hideLearning || !isLearningCollection(String(repo.name)),
-      )
+      .filter((repo) => includeRepos.size === 0 || includeRepos.has(String(repo.name).toLowerCase()))
+      .filter((repo) => !hideLearning || !isLearningCollection(String(repo.name)))
       .map(repoToProject)
       .sort((a, b) => score(b) - score(a));
 
